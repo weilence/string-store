@@ -22,6 +22,11 @@ function add() {
   addModel.value.text = ''
   addModel.value.show = false
 }
+function cancel() {
+  addModel.value.title = ''
+  addModel.value.text = ''
+  addModel.value.show = false
+}
 function del(i: number) {
   data.value.splice(i, 1)
 }
@@ -51,10 +56,10 @@ function del(i: number) {
       </v-card-text>
       <v-card-actions>
         <v-spacer />
-        <v-btn @click="addModel.show = false">
+        <v-btn @click="cancel()">
           Cancel
         </v-btn>
-        <v-btn color="info" @click="add">
+        <v-btn color="info" @click="add()">
           Save
         </v-btn>
       </v-card-actions>
