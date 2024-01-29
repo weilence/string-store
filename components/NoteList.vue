@@ -35,7 +35,7 @@ function del(i: number) {
 <template>
   <div class="p-2 space-y-2">
     <div>
-      <v-btn v-if="!addModel.show" color="primary" prepend-icon="mdi-plus" @click="addModel.show = true">
+      <v-btn v-if="!addModel.show" color="primary" prepend-icon="i-mdi-plus" @click="addModel.show = true">
         Add
       </v-btn>
     </div>
